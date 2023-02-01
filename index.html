@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+      <title>Mi CV</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="function.js"></script>
+      <script src="https://kit.fontawesome.com/ed4a3d03cf.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    
+    <header id="myHeader">
+      <nav class="header" >
+
+        <div class="desplegable" id="desplegable">
+          <button class="boton">
+            <i class="fas fa-bars img"></i>
+          </button>
+          <div class="links">
+            <a href="#perfil" onclick="smoothScroll(event);resaltar()">Contacto</a>
+            <a href="https://github.com/IvanSantoyani/">Github</a>
+          </div>
+        </div>
+      
+        <ul class="header2">
+          <li><a href="#educacion-offset" onclick="smoothScroll(event)" onclick="resaltar(evento)">Educacion</a></li>
+          <li><a href="#trabajooffset" onclick="smoothScroll(event)">Experiencia laboral</a></li>
+          <li><a href="#habilidades" onclick="smoothScroll(event)">Habilidades</a></li>
+        </ul>
+      
+      </nav>
+    </header>
+        
+    <div class="perfil" id="perfil">
+      <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="Foto de perfil de CV">
+    </div>
+
+    <div class= "contenedor" id="contenedor">
+      <h1>Ivan Santoyani</h1>
+      <address id="address">
+        <p>Trenque lauquen, 585</p>
+        <p>Buenos Aires, Argentina</p>
+        <p>11-6872-0567</p>
+        <p>ivan.santoyani@gmail.com</p>
+        <section id="educacion-offset">
+
+        </section>
+      </address>
+    </div>
+          
+        
+    <div class="caja1">
+      <div class="cajaeducacion">
+        <section id="educacion" class="educacion">
+          <h2 class="hab">Educacion</h2>
+          <ul>
+            <li>
+              <h3>Primario</h3>
+              <p>Escuela de educacion primaria n7 Tomas Espora</p>
+              <time>2009</time>
+            </li>
+
+            <li>
+              <h3>Secundario</h3>
+              <p>Cens 454</p>
+              <time>2023</time>
+            </li>
+
+            <li>
+              <h3>Fundamentos de programacion</h3>
+              <p>Argentina programa</p>
+              <p>Fundamentos de JS y Ruby</p>
+              <time>2022</time>
+              <section id="trabajooffset"></section>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="cajatrabajo">
+        <section id="experiencia-de-trabajo">
+          <h2 class="hab">Experiencia de Trabajo</h2>
+          <ul>
+            <li>
+              <h3>Herreria</h3>
+              <p>Javier el herrero</p>
+              <time>2015-actualidad</time>
+              <p>Tareas:</p>
+              <ul>
+                <li>Ayudante de herreria</li>
+                <li>Carga y descarga, tratado del material de trabajo.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>Automatizacion de portones</h3>
+              <p>empresa independiente</p>
+              <time>2020-actualidad</time>
+              <p>Tareas:</p>
+              <ul>
+                <li>Automatizacion de portones corredizos</li>
+                <li>Service de automatizaciones de portones</li>
+                <li>Implementacion de tecnologias wifi para automatizacion y vinculacion a camaras de seguridad</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="cajahabilidades">
+        <section id="habilidades">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+  </body>
+       
