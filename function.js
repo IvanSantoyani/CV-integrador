@@ -1,11 +1,31 @@
 function resaltar(){
-  document.getElementById("contenedor").style.background= 'radial-gradient(circle, wheat 30%, yellow 100%)';
-  setTimeout(resaltado, 1000);
+  
+  document.getElementById("contenedor").style.boxShadow= "0 0 5px 5px rgb(255, 217, 0)";
+  document.getElementById("contenedor").style.borderColor= "yellow"
+  
+
+  setTimeout(resaltado, 2000);
 }
 function resaltado(){
-  document.getElementById("contenedor").style.background= 'radial-gradient(circle, wheat 88%, lightslategray 100%)';
+  document.getElementById("contenedor").style.boxShadow= "0 0 5px 5px rgb(0, 0, 0)";
+  document.getElementById("contenedor").style.borderColor= "black"
+  
 
 }
+//probando otros boxshadow
+function resaltar2(){
+  
+  document.getElementById("educacion").style.boxShadow= "0 0 5px 5px rgb(255, 217, 0)";
+  document.getElementById("educacion").style.borderColor= "yellow"
+  
+
+  setTimeout(resaltado2, 2000);
+}
+function resaltado2(){
+  document.getElementById("educacion").style.boxShadow= "0 0 5px 5px rgb(0, 0, 0)";
+  document.getElementById("educacion").style.borderColor= "black"
+}
+
 
 //desplazamiento suave
 function smoothScroll(event) {
